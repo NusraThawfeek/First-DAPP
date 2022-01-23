@@ -1,0 +1,72 @@
+<head>
+    <title>
+        Student Informstion
+    </title>
+    <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>Enter Student Details</h2>
+        <form action="">
+            <p>Name</p>
+            <input id="name" type="text" value="" />
+            <p>Age</p>
+            <input id="age" type="text" value="" />
+            <p>DOB</p>
+            <input id="DOB" type="text" value="" />
+            <p>Gender</p>
+            <input id="gender" type="text" value="" />
+            <br />
+            <br />
+            <label for="Club"> Choose the club</label>
+            <select name="club" id="clubs">
+                <option value="vollyball">VollyBall</option>
+                <option value="Chess">Chess</option>
+            </select>
+            <br />
+            <br />
+            <label for="course"> Choose the courses</label>
+            <select name="course" id="courses">
+                <option value="IT"> IT </option>
+                <option value="EEE"> EEE </option>
+                <option value="CIVIL"> CIVIL </option>
+            </select>
+            <br /> <br />
+            <button id="b1">SAVE</button>
+        </form>
+    </div>
+
+    <h2>To view the student's detail enter the student ID and enter the view button</h2>
+
+    <p>Student ID</p>
+    <input type="number" id="ID" value="" />
+    <button id="b2">VIEW</button>
+    <br />
+    <br />
+    <div id="R">
+        <div>Student Name : <span id="N"></span></div>
+        <div>Student Age : <span id="A"></span></div>
+        <div>Student DOB : <span id="D"></span></div>
+        <div>Student Gender : <span id="G"></span></div>
+        <div>Student Club : <span id="C"></span></div>
+        <div>Student Course : <span id="Co"></span></div>
+    </div>
+    <br />
+    <h2>Select the courese to view the IDs of the student, who are in the same course</h2>
+    <p><label for="" id="course"> Choose the courses</label>
+        <select name="courses" id="crs">
+            <option value="IT"> IT </option>
+            <option value="EEE"> EEE </option>
+            <option value="CIVIL"> CIVIL </option>
+        </select>
+    </p>
+    <button id="b3">VIEW</button>
+    <br /><br />
+    <div>
+        <div>Student IDs : <span id="IDs"></span></div>
+    </div>
+
+</body>
